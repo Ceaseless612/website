@@ -4,18 +4,8 @@
 </head>
 <body>
 <?php
-  if (isset($_FILES['userfile'])){
-      pre_r($_FILES);
-  }
-  function pre_r($array){
-      echo '<pre>';
-      pre_r($array);
-      echo '</pre>';
+$myfile = fopen("testfile.txt", "w") 
 ?>
-<form action="" method="POST" enctype="multipart/form-data">
-  <input type="file" name="userfile"><br />
-  <input type="submit" value="Upload"><br />
-</form>
 
 </body>
 </html>
